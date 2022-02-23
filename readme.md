@@ -11,4 +11,3 @@ Created using HTML5, CSS3, and Bootstrap.
 
 
 
-If you like my portfolio, please send a cash donation to @alexander-eilers on Venmo.
