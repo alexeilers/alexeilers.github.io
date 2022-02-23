@@ -14,113 +14,169 @@
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/ae.jpeg" alt="AE Logo" width="45" height="30"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            More
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Education</a></li>
-                            <li><a class="dropdown-item" href="#">Work History</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 navbar fixed-top">
+        <a class="navbar-brand" href="#"></a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">home</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#scrollspyHeading2">about me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading3">projects</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#scrollspyHeading4">contact</a>
+          </li>
+          <li>
+            <a class="nav-link" href="https://drive.google.com/file/d/1WObJ2HvS0u1q9yQCr0PyyGhJr9rcEQ5V/view?usp=sharing" target="_blank">resume</a>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+      </div>
 
     <!-- Landing/Header -->
-    <div class="contentWrapper">
-        <h1>Alex Eilers</h1>
-        <h6>somewhere between a heavy riff and a hashtag</h6>
-        <a href="https://youtu.be/xXFlGekDl3A" target="_blank"><img src="assets/self.jpeg" alt="Me playing drums"
-                height="50%" width="50%"></a>
+    <section id="scrollspyHeading1">
+        <div class="contentWrapper">
+            <div class = fade-in-image id = homescreen>
+                <h1>alex eilers</h1>
+                <h6>somewhere between a heavy riff and a hashtag</h6>
+                <a href="https://youtu.be/xXFlGekDl3A" target="_blank"><img src="assets/self.jpeg" alt="Me playing drums" height="50%" width="50%"></a>
+            </div>
+        </div>
+    </section>
 
-        <br />
+
+
+    <section id="scrollspyHeading2">
+        <div class="contentWrapper" id="about">
+            <id="about">
+            <h3>about me</h3>
+            <p>I hold a Bachelor of Arts in Creative Writing from Grand Valley State University. Since 2005, I've worked in a variety of roles - from the guy who whips up your fondue at The Melting Pot, to an education counselor at a university, and a smattering of other roles in between. All along the way, I've been an avid guitar and drum player. I love writing, recording, mixing, and performing. Most Saturdays you'll catch me in front of my computer with headphones on, sipping a cup of coffee, recording my latest riff or trying to get a mix just right. </p>
+            <br>
+            <p>Originally from Michigan, I've had the opportunity to live all over the country. I blame my dad for giving me the travel bug; his time in the seminary and as a pastor had us moving quite often. I've moved more times than you can count on all your fingers and toes, and even got the chance to live in London during my time in the study abroad program at GVSU. I currently live in Fishers, IN - with absolutely no plans of moving away from Indy - with my wife and cocker spaniel, Lylah, and we are expecting our first child in July. </p>
+            <br>
+            <p>Along with music and travel, I'm passionate about the arts, education, and food. I enjoy reading biographies and military history, but really any kind of non-fiction will do. I have a weak spot for trash TV like 90 Day Fiancé, but nothing is as near and dear to me as Frasier. 
+            </p>
+        </div>
+    </section>
 
         <!-- Projects -->
-        <h1>Projects</h1> <br />
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="assets/indy1.jpeg" class="d-block w-100" alt="...">
+        <section id="scrollspyHeading3">
+            <div class="contentWrapper">
+                <h2>projects</h2>
+                <br><br>
+
+<!-- PROJECTS ROW ONE -->
+
+                <div class="card-group">
+                    <div class="card">
+                        <a href="https://codepen.io/alexeilers/pen/ZEaGNqg" target="_blank"> <img src="assets/doritoman.png" class="card-img-top" alt="Dorito Man"></a>
+                      <div class="card-body">
+                        <h5 class="card-title">CSS Character</h5>
+                        <p class="card-text">Created and designed a character solely using CSS and HTML via <a href="https://codepen.io/alexeilers/pen/ZEaGNqg">codepen.io.</a></p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted"></small>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <a href="https://alexeilers.github.io/StaticStorefront/" target="_blank"> <img src="assets/circlecity.png" class="card-img-top" alt="Coffee Store Homepage"></a>
+                      <div class="card-body">
+                        <h5 class="card-title">Static Storefront</h5>
+                        <p class="card-text">A homepage designed to sell a product. Now I just need to start a coffee shop called Circle City Coffee Co.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted"></small>
+                      </div>
+                    </div>
+                    <div class="card">
+                        <a href="https://github.com/alexeilers/gameAssignment/blob/main/Program.cs" target="_blank"> <img src="assets/labmids.png" class="card-img-top" alt="Lab Mids word game built using c sharp"></a>
+                      <div class="card-body">
+                        <h5 class="card-title">C# Console Game</h5>
+                        <p class="card-text">A Mad Lib style game using C#. Users select a variety of stories, fill in the words when prompted, and hilarity ensues! Best played after 2 or 3 beers.</p>
+                      </div>
+                      <div class="card-footer">
+                        <small class="text-muted"></small>
+                      </div>
+                    </div>
+                    
+                    <br><br>
+
+<!-- PROJECTS ROW TWO -->
+
+                    <div class="card-group">
+                        <div class="card">
+                            <a href="https://github.com/alexeilers/orbDig/blob/main/gameTwo/Program.cs" target="_blank"> <img src="assets/legend.png" class="card-img-top" alt="Legend of the Orbs"></a>
+                          <div class="card-body">
+                            <h5 class="card-title">C# Adventure Game</h5>
+                            <p class="card-text">Created an <a href="https://github.com/alexeilers/orbDig/blob/main/gameTwo/Program.cs">adventure game</a> that uses more advanced C# than my first game. Outcome based on players decisions.</p>
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted"></small>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> <img src="assets/comingsoon.jpeg" class="card-img-top" alt="Coffee Store Homepage"></a>
+                          <div class="card-body">
+                            <!-- <h5 class="card-title"> Coming Soon <h5> -->
+                            <!-- <p class="card-text"> Description text. </p> -->
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted"></small>
+                          </div>
+                        </div>
+                        <div class="card">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"> <img src="assets/comingsoon.jpeg" class="card-img-top" alt="Lab Mids word game built using c sharp"></a>
+                          <div class="card-body">
+                            <!-- <h5 class="card-title"> Coming Soon <h5> -->
+                            <!-- <p class="card-text"> Description text. </p> -->
+                          </div>
+                          <div class="card-footer">
+                            <small class="text-muted"></small>
+                          </div>
+                        </div>
+                    
                 </div>
-                <div class="carousel-item">
-                    <img src="assets/indy2.jpeg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="assets/indy3.jpeg" class="d-block w-100" alt="...">
-                </div>
+
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1400085271&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/alexxeilers" title="alexxeilers" target="_blank" style="color: #cccccc; text-decoration: none;">alexxeilers</a> · <a href="https://soundcloud.com/alexxeilers/sets/da-ep-demos" title="DA EP Demos" target="_blank" style="color: #cccccc; text-decoration: none;">Demos & New Songs</a></div>
+
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </section>
 
 
         <!-- Contact -->
-
-        <form action="https://formspree.io/f/mwkyllyj" method="POST">
-            <h2>Say Hello</h2> <br /><br />
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1"
-                    aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Your email address will never be shared.</div>
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </div>
-        </form>
-
-
-        <!-- Socials -->
-        <div id="socials">
-            <a href="https://www.linkedin.com/in/alexander-eilers-01376642/" target="_blank"><img
+        <section id="scrollspyHeading4">
+            <div class="contentWrapper">
+                <h2>contact</h2>
+                <form action="https://formspree.io/f/mwkyllyj" method="POST">
+                    <br /><br />
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">Your email address will never be shared.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Your Message</label>
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+                <div id="socials">
+                    <a href="https://www.linkedin.com/in/alexander-eilers-01376642/" target="_blank"><img
                     src="assets/linkedin.png" alt="LinkedIn profile" height="40" width="40"></a>
 
-            <a href="https://www.instagram.com/mrbagodoughnuts" target="_blank"><img src="assets/instagram.png"
-                    alt="Instagram profile" height="40" width="40"></a>
+                    <a href="https://github.com/alexeilers" target="_blank"><img src="assets/github.png" alt="github profile" height="40" width="40"></a>
 
-            <a href="https://www.facebook.com/alex.eilers" target="_blank"><img src="assets/facebook.png"
-                    alt="Facebook profile" height="40" width="40"></a>
-        </div>
+                    <a href="https://www.facebook.com/alex.eilers" target="_blank"><img src="assets/facebook.png" alt="Facebook profile" height="40" width="40"></a>
+                </div>
+            </div>
+        </section>
+        
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-
 
     <footer>
         <span>2022 &copy All Rights Reserved</span>

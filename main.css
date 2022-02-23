@@ -3,23 +3,44 @@ body {
 }
 
 .contentWrapper {
+    z-index: 1;
     position: relative;
-    padding: 3.0rem 15.0rem 3.0rem 15.0rem;
+    margin-top: 20rem;
+    margin-bottom: 1rem;
+    padding: 1.0rem 15.0rem 10.0rem 15.0rem;
     text-align: center;
 }
 
 h1 {
+    font-size: 70px;
+}
+
+h2 {
     font-size: 50px;
 }
+
+
 
 h6 {
     font-style: italic;
 }
 
+section {
+    padding-top: 1px;
+}
+
+#about {
+    margin-top: 20rem;
+    /* margin-bottom: 30rem; */
+    text-align: right;
+}
+
+
+
 form {
     background-color: rgb(240, 239, 239);
     margin: 5.0rem 0 0 0;
-    padding: 3.0rem 15.0rem 3.0rem 15.0rem;
+    padding: 1.0rem 15.0rem 1.0rem 15.0rem;
 }
 
 button {
@@ -27,8 +48,11 @@ button {
 }
 
 #socials {
-    margin-top: 2.0 0 0 0rem;
-    padding: 100px;
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0rem 5.0rem 3.0rem 5.0rem;
+    text-align: center;
 }
 
 
@@ -37,3 +61,47 @@ footer {
     color: rgb(0, 0, 0);
     text-align: center;
 }
+
+.fade-in-image {
+    animation: fadeIn 2.5s;
+    -webkit-animation: fadeIn 2.5s;
+    -moz-animation: fadeIn 2.5s;
+    -o-animation: fadeIn 2.5s;
+    -ms-animation: fadeIn 2.5s;
+  }
+  @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+#homescreen {
+
+    transition: 0.5s;
+
+}
+
+#homescreen:hover {
+    opacity: 0.5
+
+}
+
